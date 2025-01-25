@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synced by Love - Professional Relationship Counseling & Support</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Synced by Love provides expert relationship counseling, support groups, and personalized guidance to help individuals find meaningful connections.">
+    <meta name="keywords" content="relationship counseling, love support, relationship help, marriage counseling, dating support">
+    <meta name="author" content="Claudius Mainja">
+    <link rel="canonical" href="https://www.syncedby.love">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.syncedby.love">
+    <meta property="og:title" content="Synced by Love - Professional Relationship Support">
+    <meta property="og:description" content="Expert relationship counseling and support to help you find meaningful connections.">
+    <meta property="og:image" content="/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Synced by Love">
+    <meta name="twitter:description" content="Professional relationship counseling and support services.">
+    
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.3.4/tsparticles.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+
+  <!-- GSAP for animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="/src/main.css">
+    <link rel="stylesheet" href="/src/about.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'montserrat': ['Montserrat', 'sans-serif']
+                    },
+                    colors: {
+                        'brand-red': '#8B0000',
+                        'brand-black': '#1A1A1A',
+                        'brand-green': '#2ecc71'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<header>
+  <!-- Navbar -->
+<nav class="bg-[#960606]  border-gray-200 ">
+<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+<!-- Logo -->
+<div class="flex-shrink-0 flex items-center">
+<img src="/assets/images/trans-logo.png" alt="Nature Extant" class="h-16 w-auto"/>
+</div>
+    <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-[#7D7CAA] focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-dropdown" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 text-white">
+            <li><a href="/index.html" class="block py-2 px-3 hover:text-[#EC8229]">Welcome</a></li>
+            
+            <li>
+                <a href="/pages/about.html">
+                <button id="dropdownNavbarLink" data-dropdown-toggle="whoWeAreDropdown" class="flex items-center py-2 px-3 hover:text-[#EC8229]">Who We Are <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg></button>
+                <div id="whoWeAreDropdown" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                    <ul class="py-2 text-sm text-gray-700">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Our Team</a></li>
+                    </ul>
+                </div>
+            </a>
+            </li>
+            <li><a href="/pages/services.html" class="block py-2 px-3 hover:text-[#EC8229]">What We Do</a></li>
+            <li><a href="/pages/contact.html" class="block py-2 px-3 hover:text-[#EC8229]">Contact Us</a></li>
+
+        </ul>
+    </div>
+</div>
+</nav>
+</header>
+
+<body class="bg-white text-brand-black">
+
+
+        <!-- Hero Section -->
+        <section id="about" class="relative gradient-bg max-h-screen flex items-center justify-center p-8 pt-20">
+            <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                <div class="blob bg-brand-red w-64 h-64 -top-16 -left-16"></div>
+                <div class="blob bg-brand-green w-80 h-80 top-1/2 -right-24"></div>
+            </div>
+
+            <div class="container mx-auto grid md:grid-cols-2 gap-8 items-center relative z-10">
+                <div class="space-y-6 animate-fade-in">
+                    <h1 class="text-5xl font-bold mb-4 text-white drop-shadow-lg">
+                       Who We Are
+                    </h1>
+                    <p class="text-xl mb-6 leading-relaxed text-gray-200">
+                        We are built t0 empower individuals to build meaningful connections and lasting relationships through expert counseling and support.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="/pages/services.html" target="_blank" class="bg-brand-green text-white px-6 py-3 rounded-xl hover:scale-105 transition-transform hover-float">
+                            Start Your Journey
+                        </a>
+                        <a href="mailto:info@syncedbylove.com" target="_blank" class="border border-white text-white px-6 py-3 rounded-xl hover:bg-orange-500 hover:text-brand-black transition-colors hover-float">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="/assets/images/about2.png" alt="Relationship Experts" class="rounded-lg shadow-2xl hover:scale-105 transition-transform hover-float">
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Values Section -->
+        <section id="mission" class="py-16 bg-gray-100">
+            <div class="container mx-auto grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md hover-float">
+                    <h2 class="text-3xl font-semibold text-brand-red mb-4">Our Mission</h2>
+                    <p>Empower individuals to find meaningful connections and build lasting relationships through professional guidance and supportive community.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover-float">
+                    <h2 class="text-3xl font-semibold text-brand-red mb-4">Our Vision</h2>
+                    <p>To be the leading global platform that transforms how people approach relationships, fostering understanding, growth, and genuine connection.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover-float">
+                    <h2 class="text-3xl font-semibold text-brand-red mb-4">Our Values</h2>
+                    <ul class="space-y-2">
+                        <li>• Compassion</li>
+                        <li>• Integrity</li>
+                        <li>• Personalized Support</li>
+                        <li>• Continuous Learning</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 bg-brand-black text-white">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-12 text-brand-green">Our Services</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gray-800 p-8 rounded-lg hover-float">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4 text-brand-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                        </svg>
+                        <h3 class="text-2xl mb-4">Counseling</h3>
+                        <p>Personalized relationship and marriage counseling sessions.</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-lg hover-float">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4 text-brand-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        <h3 class="text-2xl mb-4">Support Groups</h3>
+                        <p>Online and in-person support groups for connection.</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-lg hover-float">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4 text-brand-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                        <h3 class="text-2xl mb-4">Personal Growth</h3>
+                        <p>Workshops and programs for personal relationship development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="py-16 bg-gray-100">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-12 text-brand-red">Our Team</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md hover-float">
+                        <img src="/assets/images/the-chinoz-1.png" alt="The Chinoz" class="w-48 h-48 rounded-xl mx-auto mb-6 object-cover">
+                        <h3 class="text-2xl font-semibold text-brand-red">The Chinoz</h3>
+                        <p class="text-gray-600">Founders</p>
+                        <p class="mt-4">They say behind every great relationship is a great team, and that's exactly what Takunda and Karen Chinouriri bring to the table. This Zimbabwean couple, now based in the UK, is passionate about helping others navigate the beautiful complexities of love and partnership.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md hover-float">
+                        <img src="/assets/images/rutendy.png" alt="Rutendy4" class="w-48 h-48 rounded-xl mx-auto mb-6 object-cover">
+                        <h3 class="text-2xl font-semibold text-brand-red">RueTendy4</h3>
+                        <p class="text-gray-600">Founders</p>
+                        <p class="mt-4">Mr and Mrs Gondo,a devoted Zimbabwean couple residing in the UK, embarked on our journey together in 2016. A union that has since been graced with the presence of two precious daughters. In our eyes as a couple, every relationship is a sacred covenant deserving of reverence, and we pledge with our hearts and hands to serve as stewards of love eternal flame.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="bg-[#960606] py-16 text-white">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-6">Ready to Transform Your Relationships?</h2>
+                <p class="text-xl mb-8">Take the first step towards meaningful connections today.</p>
+                <a href="mailto:info@syncedbylove.com" target="_blank" class="bg-white text-gray-800 px-8 py-4 rounded-xl text-xl hover:bg-gray-100 transition-colors">
+                    Book a Consultation
+                </a>
+            </div>
+        </section>
+    </div>
+
+    
+   <!-- Footer -->
+   <footer class="bg-black text-white py-8 text-center">
+    <p>© 2024 Synced by Love. All Rights Reserved.</p>
+    <p class="mt-2">
+        Designed and Developed by 
+        <a href="https://www.claudius-mainja.com" class="text-red-500 hover:underline ml-1">
+            Claudius Mainja
+        </a>
+    </p>
+</footer>
+
+
+<!-- Initialize AOS -->
+<script>
+const counterAnimation = () => {
+    const counters = document.querySelectorAll('.counter');
+    
+    counters.forEach(counter => {
+        const target = +counter.getAttribute('data-target');
+        const duration = 2000; // Animation duration in milliseconds
+        const increment = target / (duration / 16); // 60 FPS
+        
+        let current = 0;
+        
+        const updateCounter = () => {
+            current += increment;
+            if (current < target) {
+                counter.innerText = Math.ceil(current);
+                requestAnimationFrame(updateCounter);
+            } else {
+                counter.innerText = target;
+            }
+        };
+        
+        updateCounter();
+    });
+};
+
+// Initialize animations when elements become visible
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            if (entry.target.classList.contains('counter')) {
+                counterAnimation();
+            }
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in, .counter').forEach((el) => observer.observe(el));
+
+// Initialize AOS
+AOS.init({
+    duration: 800,
+    once: true,
+    offset: 100
+});
+</script>
+
+<script>
+  // Mobile Menu Toggle
+  document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+<script>
+    // GSAP Animations
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Fade in sections on scroll
+    gsap.utils.toArray('.hover-float').forEach(element => {
+        gsap.from(element, {
+            opacity: 0,
+            y: 50,
+            duration: 1,
+            scrollTrigger: {
+                trigger: element,
+                start: 'top 80%'
+            }
+        });
+    });
+
+    // Blob movement
+    gsap.to(".blob", {
+        x: "+=50",
+        y: "+=50",
+        duration: 10,
+        repeat: -1,
+        yoyo: true,
+        ease: "power1.inOut"
+    });
+</script>
+</body>
+</html>

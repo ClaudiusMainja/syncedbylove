@@ -1,0 +1,24 @@
+body { 
+    font-family: 'Montserrat', sans-serif; 
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.gradient-bg {
+    background: linear-gradient(135deg, #8B0000, #1A1A1A, #2ecc71);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.hover-float { transition: transform 0.3s ease; }
+.hover-float:hover { transform: translateY(-10px); }
+.blob {
+    position: absolute;
+    filter: blur(50px);
+    opacity: 0.5;
+    border-radius: 50%;
+    z-index: 0;
+}
