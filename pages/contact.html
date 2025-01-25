@@ -36,18 +36,26 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="/src/main.css">
-
+    <link rel="stylesheet" href="/src/about.css">
+    <link rel="stylesheet" href="/src/contact.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        'love': ['Cormorant Garamond', 'serif']
+                        'montserrat': ['Montserrat', 'sans-serif']
+                    },
+                    colors: {
+                        'brand-red': '#8B0000',
+                        'brand-black': '#1A1A1A',
+                        'brand-green': '#2ecc71'
                     }
                 }
             }
         }
     </script>
+
 </head>
 
 <header>
@@ -80,6 +88,13 @@
             </li>
             <li><a href="/pages/services.html" class="block py-2 px-3 hover:text-[#EC8229]">What We Do</a></li>
             <li><a href="/pages/contact.html" class="block py-2 px-3 hover:text-[#EC8229]">Contact Us</a></li>
+            <li>
+                <a href="/pages/donate.html" target="_blank">
+                <button class="px-8 py-3 bg-orange-500 text-white rounded-xl hover:bg-white hover:text-gray-900">
+                    Donate Now
+                </button>
+            </a>
+            </li>
 
         </ul>
     </div>
@@ -89,15 +104,112 @@
 
 
 
+
 <body>
 
 
+    <!-- Hero Section -->
+    <section id="about" class="relative gradient-bg max-h-screen flex items-center justify-center p-8 pt-20">
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="blob bg-brand-red w-64 h-64 -top-16 -left-16"></div>
+            <div class="blob bg-brand-green w-80 h-80 top-1/2 -right-24"></div>
+        </div>
+
+        <div class="container mx-auto grid md:grid-cols-2 gap-8 items-center relative z-10">
+            <div class="space-y-6 animate-fade-in">
+                <h1 class="text-5xl font-bold mb-4 text-white drop-shadow-lg">
+                 Contact Us Today
+                </h1>
+                <p class="text-xl mb-6 leading-relaxed text-gray-200">
+                    We believe in the power of love, and we’re here to help you nurture it. Whether you’re looking to strengthen communication, navigate conflict, or simply build a deeper connection, Synced by Love is your partner in creating a thriving relationship.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="mailto:info@syncedbylove.com"" target="_blank" class="bg-brand-green text-white px-6 py-3 rounded-xl hover:scale-105 transition-transform hover-float">
+                        Start Your Journey
+                    </a>
+
+                    <a href="/pages/services.html" target="_blank" class="border border-white text-white px-6 py-3 rounded-xl hover:bg-orange-500 hover:text-brand-black transition-colors hover-float">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="/assets/images/contacthero.png" alt="Relationship Experts" class="rounded-lg shadow-2xl hover:scale-105 transition-transform hover-float">
+            </div>
+        </div>
+    </section>
 
 
+<section class="bg-gradient-to-br from-red-50 to-white">
+    <section class="container mx-auto px-4 py-16">
+        <h1 class="text-4xl font-bold text-brand-red text-center mb-12">
+            Connect With Our Team
+        </h1>
+        
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-2xl">
+                <div class="p-6 text-center">
+                    <img src="/assets/images/the-chinoz-1.png" 
+                         alt="The Chinoz Profile" 
+                         class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-red-100 mb-4">
+                    
+                    <h2 class="text-2xl font-bold text-gray-800">The Chinoz</h2>
+                    <p class="text-sm text-gray-500 mb-4">Founder</p>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center justify-center text-gray-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-brand-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            <span>+44 777 017 1774</span>
+                        </div>
+                        <div class="flex items-center justify-center text-gray-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-brand-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <span>thechinoz@syncedbylove.com</span>
+                        </div>
+                    </div>
+                    <a href="mailto:thechinoz@syncedbylove.com">
+                    <button class="w-full bg-brand-green text-white py-3 rounded-lg hover:bg-green-700 transition-colors">
+                        Book Consultation
+                    </button>
+                </a>
+                </div>
+            </div>
 
-
-
-
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-2xl">
+                <div class="p-6 text-center">
+                    <img src="/assets/images/rutendy.png" 
+                         alt="Rutendy Profile" 
+                         class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-red-100 mb-4">
+                    
+                    <h2 class="text-2xl font-bold text-gray-800">Rutendy</h2>
+                    <p class="text-sm text-gray-500 mb-4">Founder</p>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center justify-center text-gray-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-brand-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            <span>+44 755 478 5244</span>
+                        </div>
+                        <div class="flex items-center justify-center text-gray-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-brand-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <span>ruetendy4@syncedbylove.com</span>
+                        </div>
+                    </div>
+                    <a href="mailto:ruetendy4@syncedbylove.com">
+                    <button class="w-full bg-brand-green text-white py-3 rounded-lg hover:bg-green-700 transition-colors">
+                        Schedule Session
+                    </button>
+                </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -164,28 +276,23 @@ AOS.init({
 </script>
 
 <script>
-  // Particle Configuration
-  tsParticles.load("tsparticles", {
-      particles: {
-          number: { value: 80, density: { enable: true, value_area: 800 } },
-          color: { value: "#ff0000" },
-          shape: { type: "heart" },
-          opacity: { value: 0.5, random: true },
-          size: { value: 10, random: true },
-          move: { 
-              enable: true, 
-              speed: 2, 
-              direction: "top", 
-              random: true 
-          }
-      }
-  });
+
 
   // Mobile Menu Toggle
   document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
       const mobileMenu = document.getElementById('mobile-menu');
       mobileMenu.classList.toggle('hidden');
   });
+</script>
+<script>
+    // Simple GSAP animation for subtle page load effect
+    gsap.from(".contact-card", {
+        opacity: 0,
+        y: 50,
+        stagger: 0.2,
+        duration: 0.8,
+        ease: "power3.out"
+    });
 </script>
 </body>
 </html>
